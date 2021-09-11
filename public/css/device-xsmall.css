@@ -1,0 +1,97 @@
+@media only screen and (min-width:320px) and (max-width:767.5px) 
+{
+    
+    /**************************************************
+        
+        Index page css
+
+    *************************************************/
+
+
+    /******* footer main css *******/
+
+    .container-width {
+        width: 93%;
+        margin: 0 auto;
+    }
+
+    .footer_spacing {
+        padding: 3rem 0 0;
+    }
+
+    .footer_logo>img {
+        margin-bottom: 1.2rem;
+        max-width: 15rem;
+    }
+
+    .content_one {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .content_two, .content_three, .content_four, .content_five {
+        width: 50%;
+        margin-bottom: 2rem;
+    }
+ 
+    .footer_heading {
+        margin-bottom: 1rem;
+    }
+    
+    .common_links {
+        color: #c1c1c1;
+    }
+
+    
+    .copyright_content {
+        margin-bottom: 1rem;
+    }
+
+
+
+
+    /******* css for subscribe newsletter *******/
+
+    .f-subscribe {
+        width: 80%;
+    }
+
+    .sbs-input {
+        margin-bottom: 0.5rem;
+    }
+
+    .sbs-btn {
+        position: relative;
+        justify-content: center;
+        height: 3.3rem;
+    }
+
+    .download-application {
+        padding: 4rem 0 4.5rem;
+    }
+
+
+
+
+    /******* css for FAQ section *******/
+
+
+    .features-heading {
+        width: 93%;
+    }
+
+    .heading-subcontent {
+        padding: 0;
+    }
+
+    .heading-top {
+        font-size: 2.5rem;
+        margin-bottom: 0.9rem;
+    }
+
+    #faq {
+        margin-bottom: 4.5rem;
+    }
+
+
+}

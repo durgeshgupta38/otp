@@ -1,0 +1,1402 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+  
+html {
+    font-size: 16px; 
+}
+  
+body {
+    text-rendering: optimizeLegibility;
+    overflow-y: scroll; 
+}
+  
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    margin-bottom: 0; 
+} 
+  
+a:hover, a:focus {
+    text-decoration: none; 
+}
+  
+ul {
+    list-style-type: none; 
+}
+
+h4 {
+    color: #E61632;
+}
+
+.container-width {
+    width: 85%;
+    margin: 0 auto;
+}
+
+
+
+/* ---------------------------------------------
+    Home page
+---------------------------------------------- */
+
+
+@media only screen and (max-width:576px) {
+
+    .container-width {
+        width: 95%;
+        margin: 0 auto;
+    }
+    
+}
+
+
+
+/* Banner section css
+---------------------------------------------- */
+
+.body-banner {
+    position: relative; 
+}
+
+.carousel {
+    height: 90vh; 
+}
+
+.carousel-indicators {
+    bottom:20px;
+}
+
+.carousel-indicators > li {
+    width: 25px;
+    height: 5px;
+    border-radius: 12px; 
+    background: #fff;
+}
+
+.carousel-indicators > li.active { 
+    background: #E61632;
+    border-radius: 12px;
+}
+
+.carousel-inner {
+    height: 100%; 
+}
+  
+.banner-content {
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    left: 0;
+    transform: translate(0,-35%);
+}
+
+.wrap-bannerContent {
+    height: 268px;
+    width: 520px;
+    margin-left: 7.5%;
+}
+
+.bannerContent-heading {
+    font-size: 3rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    line-height: 60px;
+    margin-bottom: 18px;
+    color: #fff;
+}
+
+.bannerContent-highlight {
+    font-weight: 700;
+    color: #E61632;
+}
+
+.bannerContent-para {
+    color: #fff;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.5px;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+.banner-button {
+    font-weight: 500;
+}
+
+
+
+
+/* Featues section css
+---------------------------------------------- */
+
+
+/************** Wallet features ***************/
+
+.wallet-features {
+    background-image: linear-gradient(#FFF, #FEE2E7);
+    padding: 90px 0 50px 0;
+}
+
+.features-heading {
+    width:60%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.heading-top {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    line-height: 54px;
+    text-transform: capitalize;
+}
+
+.heading-subcontent {
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    color: #0D0D0D;
+    padding: 0 20%;
+}
+
+.feature-card {
+    background: transparent;
+    border-radius: 10px;
+    padding: 35px 50px;
+}
+
+.feature-card:hover {
+    background: #fff;
+    transition: all 1s ease-in-out;
+    box-shadow: 0px 4px 28px #fcacb541;
+    cursor: pointer;
+}
+
+.feature-icon {
+    margin-bottom: 30px;
+    max-height: 70px;
+}
+
+.feature-name {
+    color: #000000;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.feature-para {
+    margin: 0;
+    color: #000;
+    font-size: 1rem;
+    line-height: 24px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+
+/************** multiple payment features ***************/
+
+.Payment-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 90px 0 50px 0;
+}
+
+.payment-image>img  {
+    max-height: 600px;
+}
+
+.payment-content {
+    padding-left: 7%;
+}
+
+.edit_heading {
+    margin-bottom: 5px;
+}
+
+.edit_subcontent {
+    padding: 0;
+}
+
+.feature-spacing {
+    padding-right: 8%;
+}
+
+.listing-style {
+    background: #fff;
+    box-shadow: 0 3px 20px #FFE4E8;
+    padding: 20px 35px;
+    border-radius: 10px;
+}
+
+
+/************** control features ***************/
+
+.control-content {
+    padding-right: 7%;
+}
+
+
+
+/* Pricing section css
+---------------------------------------------- */
+
+#pricing {
+    /* background-image: url("/images/market-price-background.svg"); */
+    /* background-size: 100% 40%; */
+    /* background-repeat: no-repeat; */
+    margin-bottom: 90px;
+    position: relative;
+    z-index: 9;
+}
+
+.pricing-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 32%;
+    /* background: pink; */
+    background-image: linear-gradient(#fff,#FEE2E7);
+    z-index: 7;
+}
+
+.pricing-section {
+    padding: 90px 0;
+    position: relative;
+    z-index: 9;
+}
+
+.search {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.search input {
+    border-radius: 50px;
+    height: 66px;
+    width: 100%;
+}
+
+.search input[type=text] {
+    padding: 14px 36px;
+    font-size: 1.1rem;
+    color: #0D0D0D;
+    border: 1px solid #BEBEBE;
+    background: #FCFCFC;
+    font-weight: 400;
+}
+
+.search i {
+    font-size: 1.3rem;
+    color: #4B4B4B;
+    border: none;
+    position: absolute;
+    right: 36px;
+    top: 22px;
+}
+
+.pricing-table {
+    border:1px solid #BEBEBE;
+    border-radius: 22px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.pricing-table thead {
+    border-radius: 22px;
+}
+
+.pricing-table table {
+    background: #fff;
+    border-radius: 22px;
+}
+
+.pricing-table tbody {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.pricing-table th {
+    font-size: 1.1rem;
+    line-height: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 30px 36px 22px;
+    color: #E61632;
+    text-transform: capitalize;
+    
+}
+
+.table-name {
+    display: flex;
+    align-items: center;
+}
+
+.table-name img {
+    max-height: 60px;
+    padding-left: 12px;
+}
+
+.table td, .table th {
+    vertical-align: middle;
+    border-top: 0;
+}
+
+.pricing-table tbody tr {
+    border-bottom: 1px solid #d6d6d6;
+}
+
+.pricing-table tbody tr:last-child {
+    border-bottom: 0;
+}
+
+.table-button button {
+    color: #fff;
+    background: #C1A740;
+    border: 0;
+    padding: 6px 22px;
+    border-radius: 50px;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    box-shadow: 0 6px 16px transparent;
+    font-weight: 400;
+}
+
+.table-button button:hover {
+    background-color: #a5891d;
+    cursor: pointer;
+}
+
+.buy>button {
+    background: #E61632;
+}
+
+.table-button.buy>button:hover {
+    background-color: #b6081f;
+    cursor: pointer;
+}
+
+.change-edit {
+    color: #30C982;
+}
+
+
+.table-chart img {
+    max-height: 30px;
+}
+
+
+/************** expense video css ***************/
+
+.expense-video {
+    background-image: radial-gradient(#FFFFFF, #f85b70, #E61632);
+    height: 600px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 8;
+}
+
+.expense-video>video {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 0 0 20px 20px;
+}
+
+.video-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 9;
+    transform: translate(-50%,-50%);
+}
+
+.app-icon.video-icon {
+    background: #E61632;
+    padding: 8px 12px 8px 8px;
+}
+
+
+.video-content {
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    display: inline-block;
+    font-size: 0.8rem;
+    padding: 0 15px;
+    line-height: 18px;
+}
+
+.video-button:hover .video-icon{
+    background-color: #000;
+    color: #fff;
+}
+
+.iconback.video {
+    background:#fff;
+    border-radius: 50px;
+    width: 90px;
+    height: 40px;   
+}
+
+.app-icon .iconback.video {
+    background: #fff;
+}
+
+.app-icon .iconback .fa{
+    font-size: 18px;
+    line-height: 50px;
+    color: #E61632;
+    transition: .3s;
+}
+
+.app-icon .iconback {
+    display: inline-block;
+    text-align: center;
+    background:#303030;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+}
+
+
+.app-icon.video-icon:hover  {
+    background: #000;
+}
+
+
+
+
+/* FAQ section css
+---------------------------------------------- */
+
+#faq {
+    margin-bottom: 100px;
+}
+
+.faqListing-width {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.faq-icon {
+    max-height: 28px;
+    margin-right: 16px;
+}
+
+#faq-list .card {
+    margin-bottom: 20px;
+    border: 0;
+    -webkit-box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+    box-shadow: 0 3px 15px #e6163217;
+}
+  
+#faq-list .card-header {
+    border: 0;
+    border-radius: 2px 2px 0 0;
+    padding: 0;
+    margin: 0;
+}
+  
+#faq-list .btn-header-link {
+    color: #fff;
+    display: block;
+    text-align: left;
+    background: #fff;
+    color: #000;
+    padding: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    box-shadow: none;
+}
+  
+#faq-list .btn-header-link:after {
+    content: "\f107";
+    font-family: 'FontAwesome';
+    font-weight: 900;
+    float: right;
+    font-size: 26px;
+}
+  
+#faq-list .card .card-header .btn-header-link.collapsed {
+    background: #fff;
+    color: #000;
+}
+  
+#faq-list .card .card-header .btn-header-link.collapsed:after {
+    content: "\f106";
+    font-family: 'FontAwesome';
+}
+  
+#faq-list .card .collapsing {
+    background: #fff;
+    line-height: 30px;
+}
+  
+#faq-list .card .collapse {
+    border: 0;
+}
+  
+#faq-list .card .collapse.show {
+    background: #fff;
+    color: #222;
+}
+
+#faq-list .card-body {
+    width: 82%;
+    margin: 0 auto;
+    line-height: 24px;
+    padding: 0;
+    padding-bottom: 26px;
+}
+
+
+
+
+
+
+
+/* ---------------------------------------------
+    About us page
+---------------------------------------------- */
+
+
+/* banner section css
+---------------------------------------------- */
+
+.body-banner.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/images/about-us-banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 300px;
+    position: relative;
+}
+
+.body-banner.about::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.8;
+}
+
+.heading-top.about {
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 600;
+    position: relative;
+    z-index: 9;
+}
+
+
+
+/* css for breadcrumbs section */
+
+.breadcrumbs-list {
+    background: #f0f0f0;
+}
+
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #f0f0f0;
+}
+
+ul.breadcrumb li {
+    display: inline;
+    font-size: 1rem;
+}
+
+ul.breadcrumb li+li:before {
+    padding: 12px 15px;
+    color: black;
+    content: "\f105";
+    font-family: 'FontAwesome';
+}
+
+ul.breadcrumb li a {
+    color: #000;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+ul.breadcrumb li a:hover {
+    text-decoration: underline;
+}
+
+ul.breadcrumb li a.active {
+    color: #E61632;
+}
+
+
+/* about cozmos */
+
+#about-cozmos {
+    padding:80px 0 30px 0;
+}
+
+.about-text {
+    padding: 0;
+}
+
+.aboutCozmos-image img {
+    padding-left: 20px;
+}
+
+.about-listing ul li {
+    font-size: 1rem;
+    color: #0D0D0D;
+    font-weight: 500;
+    margin-bottom: 14px;
+}
+
+.about-listing ul li img {
+    max-height: 26px;
+    margin-right: 10px;
+}
+
+.navigation-button.about>button:hover {
+    background-color: #000;
+    color: #fff;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.heading-subcontent.about {
+    padding: 0 12%;
+}
+
+
+
+/* css for expert team section */
+
+#expert-team {
+    margin: 90px 0;
+}
+
+.team-listing .card {
+    border: none;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 0 4px 28px #8585851f;
+}
+
+.team-listing .card-img-top {
+    border-radius: 6px 6px 0 0;
+}
+
+.team-listing .card-body {
+    text-align: center;
+    background: #fff;
+    border-radius: 0 0 6px 6px;
+}
+
+
+.team-listing .card-title {
+    text-transform: capitalize;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.team-listing .card-text {
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+
+
+.team-listing .card-body:hover {
+    background: #E61632;
+    color: #fff;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+
+
+
+/* ---------------------------------------------
+    Login page
+---------------------------------------------- */
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-content {
+    width: 50%;
+}
+
+.content-width {
+    width: 55%;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.wrapper-image {
+    width: 50%;
+    height: 100vh;
+    background-image: linear-gradient(#ff445dcc, #FFD2D8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-image img {
+    max-height: 530px;
+}
+
+.logo-edit {
+    max-height: 75px;
+    margin-bottom: 30px;
+}
+
+.main-heading {
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+    font-size: 2.2rem;
+    color: #000000;
+    font-weight: 600;
+    margin-bottom: 26px;
+}
+
+.google-button {
+    background-color: #fff;
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 1px solid #F5F5F5;
+    box-shadow: 0 5px 22px #7b7b7b1c;
+    border-radius: 5px;
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.google-button:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #F5F5F5;
+}
+
+.google-edit {
+    max-height: 18px;
+    margin-right: 10px;
+}
+
+.optional {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    color: #C3C3C3;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.optional::after,
+.optional::before {
+    content: '';
+    width:88px;
+    height: 1px;
+    background-color: #E9E9E9;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.optional::after {
+    left: 0;
+}
+
+.optional::before {
+    right: 0;
+}
+
+.single-input{
+    border:1px solid #e4e4e4;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 8px 0;
+    position: relative;
+}
+
+.mail{
+    padding: 8px 12px 8px 18px;
+    color: #000;
+    max-height: 28px;
+}
+
+.lock {
+    padding: 8px 12px 8px 18px;
+    color: #000;
+    max-height: 30px;
+}
+
+.single-input input{
+    border:0px solid #c1c1c1;
+    width: 100%;
+    outline: none;
+    height: 30px;
+    font-size: 1rem;
+}
+
+.single-input input::placeholder {
+    color: #C3C3C3;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+.optional-contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.logged-in label {
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.forgot_password a {
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.forgot_password a:hover {
+    color: #E61632;
+}
+
+.login-button {
+    padding: 12px 0;
+    background-color: #E61632;
+    border: 0;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 25px #e616324b;
+    margin-bottom: 24px;
+}
+
+.login-button:hover {
+    background-color: #000;
+    box-shadow: 0 4px 25px #2424244b;
+}
+
+.account-option {
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.account-option a {
+    color: #E61632;
+    text-decoration: underline;
+}
+
+
+
+/* ---------------------------------------------
+    Registration page
+---------------------------------------------- */
+
+.user {
+    padding: 8px 12px 8px 18px;
+    color: #000;
+    max-height: 30px;
+}
+
+
+
+
+/* ---------------------------------------------
+    Contact us page
+---------------------------------------------- */
+
+
+.body-banner.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/images/contact.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 300px;
+    position: relative;
+}
+
+.body-banner.contact::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.8;
+}
+
+#contact-form {
+    padding: 70px 0 30px 0;
+}
+
+
+.contact-field {
+    width: calc(100%/2.04);
+}
+
+.phone{
+    padding: 8px 12px 8px 18px;
+    color: #000;
+    max-height: 33px;
+}
+
+.subject {
+    padding: 8px 12px 8px 18px;
+    color: #000;
+    max-height: 31px;
+}
+
+.pen {
+    padding: 8px 12px 8px 18px;
+    color: #000;
+    max-height: 32px;
+}
+
+
+/************* right side contact ***********/
+
+
+.add {
+    background: #F6F6F6;
+    border: 1px solid #ECECEC;
+    border-radius: 5px;
+    padding: 1rem 1.5rem;
+}
+
+.add-icon>img {
+    max-height: 28px;
+    margin-right: 20px;
+}
+
+.footer-socialIcons.contact>i:hover {
+    background: #b6081f;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.single-input>textarea {
+    border: 0;
+    width: 93%;
+    height: 100px;
+    outline: 0;
+}
+
+.single-input.txt {
+    align-items: flex-start;
+}
+
+
+/* css for map */
+
+.btm-space {
+    margin-bottom: 6rem;
+}
+
+.google-map {
+    border: 0.1rem solid #E1E1E1;
+    margin-bottom: 4rem;
+}
+
+
+
+
+
+/* ---------------------------------------------
+    Login popup 
+---------------------------------------------- */
+
+.modal-title.forgot {
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #000;
+    border:0;
+}
+
+
+.modal-body.forgot {
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.forgot-subheading {
+    color: #afafaf;
+    letter-spacing: 0.2px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+}
+
+
+
+
+/* ---------------------------------------------
+    Features page
+---------------------------------------------- */
+
+
+/************* breadcrumbs ***********/
+
+.btm-space {
+    margin-bottom: 5rem;
+}
+
+.body-banner.features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/images/features-banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 300px;
+    position: relative;
+}
+
+.body-banner.features::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.8;
+}
+
+
+/************* feature lising section ***********/
+
+.f-text {
+    padding: 0 1rem;
+    margin-bottom: 3rem;
+}
+
+
+/************* digital currency section ***********/
+
+
+.dg-currency {
+    background-image: linear-gradient(#fffbfb,#FEE2E7);
+    padding: 5rem 0;
+    margin-bottom: 5rem;
+}
+
+.list-edit img {
+    margin-bottom: 30px;
+}
+
+.flex-grid {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.grid-col {
+    width: 7.5rem;
+    height: 9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #1C1C1C;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    text-transform: capitalize;
+    /* letter-spacing: 0.5px; */
+}
+
+.grid-col img {
+    width: 100%;
+    max-width: 3.5rem;
+    max-height: auto;
+    margin-bottom: 0.7rem;
+}
+
+
+.dg-content p {
+    font-size: 0.9rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.dg-content span {
+    color: #E61632;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+/************* get started ***********/
+
+.d-steps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.d-steps img {
+    max-height: 7rem;
+    margin-bottom: 2.5rem;
+}
+
+.f-steps {
+    margin-bottom: 5rem;
+}
+
+
+
+
+
+
+
+/* FAQ page css
+---------------------------------------------- */
+
+
+/************** faq banner ***************/
+
+
+.body-banner.faq {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/images/FAQ-banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 300px;
+    position: relative;
+}
+
+.body-banner.faq::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.8;
+}
+
+.heading-top.faq {
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 600;
+    position: relative;
+    z-index: 9;
+}
+
+
+.faq-listing.qtn {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.f-lists.faq {
+    background-image: linear-gradient(#fffbfb,#ffebef);
+    padding: 5rem 0;
+}
+
+
+.pricing-search.qtn {
+    margin-bottom: 3.5rem;
+}
+
+
+
+/************** faq-contactDetail ***************/
+
+
+.faq-contactDetail {
+    padding: 5rem 0 6rem;
+}
+
+
+.heading-top.w-chng {
+    padding: 0 3rem;
+}
+
+.box-common {
+    background: #F6F6F6;
+    width: 30%;
+    text-align: center;
+    padding: 1.8rem 0;
+}
+
+.add-img {
+    max-height: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------
+    dashboard page
+---------------------------------------------- */
+
+
+.wrap-body {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.sidebar {
+    position: fixed;
+    height: 100%;
+    width: 240px;
+    background-color: #000;
+    padding: 20px 0;
+}
+
+.side-logo>img {
+    max-height: 60px;
+}
+
+
+.sidenav-links li {
+    width: 100%;
+    height: 50px;
+    list-style: none;
+}
+
+.sidenav-links li a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+
+.dash-icn {
+    min-width: 20px;
+    text-align: center;
+    background-color: #E61632;
+}
+
+
+
+/************* home section ***********/
+
+.home-section {
+    background: #fff;
+    position: relative;
+    min-height: 100vh;
+    width: calc(100% - 240px);
+    left: 240px;
+}
+
+.home-section nav {
+    height: 80px;
+    background: #fff;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
