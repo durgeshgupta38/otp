@@ -22,6 +22,7 @@
 }
 .form-box
 {
+    border:1px solid red;
     width:380px;
 	height:480px;
 	position:relative;
